@@ -4,17 +4,24 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.widget.TextView;
+import android.util.Log;
 
 public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setPositiveButton("挨拶", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Log.d("log", String.valueOf(i));
+            }
+        });
+        builder.show();
     }
 
 }
