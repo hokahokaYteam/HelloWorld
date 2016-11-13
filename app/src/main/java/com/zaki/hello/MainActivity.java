@@ -1,8 +1,10 @@
 package com.zaki.hello;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -10,5 +12,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
     }
+
 }
+
