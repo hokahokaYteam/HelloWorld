@@ -5,17 +5,9 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/greeting01"
+    <ListView
+        android:id="@+id/list_item02"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="挨拶"
-        android:textSize="30dp"/>
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/greeting02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Greeting"
-        android:textSize="30dp"/>
 </LinearLayout>
