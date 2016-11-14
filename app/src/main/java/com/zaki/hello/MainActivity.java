@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -29,22 +28,6 @@ public class MainActivity extends Activity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 builder.setMessage("AlertDialog");
                 builder.setView(inputView);
-
-
-
-
-//                builder.setPositiveButton("挨拶", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        Log.d("log",String.valueOf(i));
-//                    }
-//                });
-//                builder.setPositiveButton("Greeting", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        Log.d("log",String.valueOf(i));
-//                    }
-//                });
                 builder.create().show();
             }
         });
